@@ -46,9 +46,6 @@ export function Landing({ onGetStarted }: LandingProps) {
               Start Your Journey
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="soft" size="xl">
-              Learn More
-            </Button>
           </div>
         </div>
       </section>
