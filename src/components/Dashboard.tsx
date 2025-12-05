@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { PillarBoard } from "./PillarBoard";
 import { ReflectionDialog } from "./ReflectionDialog";
+import { ThemeToggle } from "./ThemeToggle";
 import { 
   ArrowLeft, 
   Flame, 
@@ -55,10 +56,13 @@ export function Dashboard({ onBack }: DashboardProps) {
             My Vision Board
           </h1>
           
-          <Button variant="warm" size="sm" onClick={() => setShowReflection(true)}>
-            <Plus className="w-4 h-4" />
-            <span className="hidden sm:inline">Reflect</span>
-          </Button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <Button variant="warm" size="sm" onClick={() => setShowReflection(true)}>
+              <Plus className="w-4 h-4" />
+              <span className="hidden sm:inline">Reflect</span>
+            </Button>
+          </div>
         </div>
       </header>
 

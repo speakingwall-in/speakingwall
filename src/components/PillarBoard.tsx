@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Checkbox } from "@/components/ui/checkbox";
+import { ThemeToggle } from "./ThemeToggle";
 import { 
   ArrowLeft, 
   Plus, 
@@ -90,6 +91,7 @@ export function PillarBoard({ pillar, onBack }: PillarBoardProps) {
           </button>
           
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             <Button variant="soft" size="sm" onClick={() => setShowSuggestions(true)}>
               <Sparkles className="w-4 h-4" />
               <span className="hidden sm:inline">Suggestions</span>

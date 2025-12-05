@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { pillars } from "@/data/pillars";
 import { ArrowRight, Sparkles, Target, Heart } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 interface LandingProps {
   onGetStarted: () => void;
@@ -9,6 +10,11 @@ interface LandingProps {
 export function Landing({ onGetStarted }: LandingProps) {
   return (
     <div className="min-h-screen bg-background">
+      {/* Theme Toggle */}
+      <div className="fixed top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
+      
       {/* Hero Section */}
       <section className="relative overflow-hidden px-4 py-20 md:py-32">
         <div className="absolute inset-0 bg-gradient-to-b from-terracotta/5 to-transparent" />
