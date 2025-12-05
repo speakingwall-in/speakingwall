@@ -65,7 +65,7 @@
     --gradient-warm: linear-gradient(135deg, hsl(var(--terracotta)) 0%, hsl(var(--warm-gold)) 100%);
     --gradient-sage: linear-gradient(135deg, hsl(var(--sage)) 0%, hsl(var(--sage-light)) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(40 33% 97%) 0%, hsl(40 25% 93%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(40 30% 99%) 0%, hsl(40 25% 96%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted) / 0.3) 100%);
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(25 25% 15% / 0.08);
@@ -157,6 +157,31 @@
     --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
     --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
     --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+
+    /* Dark mode custom colors */
+    --terracotta: 14 50% 55%;
+    --terracotta-light: 14 45% 65%;
+    --sage: 143 30% 50%;
+    --sage-light: 143 25% 60%;
+    --cream: 40 15% 15%;
+    --warm-gold: 45 60% 55%;
+    --warm-brown: 25 20% 65%;
+    --soft-coral: 12 55% 60%;
+    --dusty-rose: 350 30% 60%;
+    --sky-blue: 200 45% 55%;
+    --lavender: 270 30% 60%;
+
+    /* Dark mode gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(var(--terracotta)) 0%, hsl(var(--warm-gold)) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(var(--sage)) 0%, hsl(var(--sage-light)) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(240 5% 12%) 0%, hsl(240 5% 8%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(240 5% 18%) 100%);
+
+    /* Dark mode shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 8px 30px -8px hsl(0 0% 0% / 0.4);
+    --shadow-elevated: 0 12px 40px -10px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(var(--terracotta) / 0.3);
   }
 }
 
